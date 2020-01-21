@@ -3,8 +3,8 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 const fileName = path.join(__dirname, '../tests/fixtures/translations.xlsx')
-const csTranslationCopiedPath = path.join(__dirname, '../csTranslation.ts')
-const enTranslationCopiedPath = path.join(__dirname, '../enTranslation.ts')
+const csTranslationCopiedPath = path.join(__dirname, 'temp/csTranslation.ts')
+const enTranslationCopiedPath = path.join(__dirname, 'temp/enTranslation.ts')
 const translationFilePaths = {
   cs: csTranslationCopiedPath,
   en: enTranslationCopiedPath
