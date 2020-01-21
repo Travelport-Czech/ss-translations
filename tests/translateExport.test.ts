@@ -12,7 +12,8 @@ const translations = {
 
 describe('export test', () => {
   it('should export to file and contain rows with cat and dog', () => {
-    fs.unlinkSync(fileName)
+    fs.existsSync(fileName) && fs.unlinkSync(fileName)
+
     translateExport(translations, TranslationEnum, fileName)
     const file = fs.readFileSync(fileName)
     expect(file.toString()).toContain(

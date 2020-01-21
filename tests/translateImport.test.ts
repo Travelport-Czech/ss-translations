@@ -12,10 +12,12 @@ const translationFilePaths = {
 
 describe('import test', () => {
   it('should import to typescript files', () => {
-    fs.unlinkSync(csTranslationCopiedPath)
-    fs.unlinkSync(enTranslationCopiedPath)
+    fs.existsSync(csTranslationCopiedPath) && fs.unlinkSync(csTranslationCopiedPath)
+    fs.existsSync(enTranslationCopiedPath) && fs.unlinkSync(enTranslationCopiedPath)
+
     fs.copyFileSync(path.join(__dirname, '../tests/fixtures/csTranslation.ts'), csTranslationCopiedPath)
     fs.copyFileSync(path.join(__dirname, '../tests/fixtures/enTranslation.ts'), enTranslationCopiedPath)
+
     translateImport(fileName, translationFilePaths)
 
     const file = fs.readFileSync(enTranslationCopiedPath)
