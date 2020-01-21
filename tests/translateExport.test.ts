@@ -3,7 +3,7 @@ import { csTranslation } from './fixtures/csTranslation'
 import { enTranslation } from './fixtures/enTranslation'
 import { translateExport } from '../src/translateExport'
 import * as fs from 'fs'
-import * as path from "path"
+import * as path from 'path'
 
 const fileName = path.join(__dirname, 'temp/translations.xlsx')
 const translations = {
