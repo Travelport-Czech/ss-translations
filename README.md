@@ -1,6 +1,14 @@
 # ss-translations
 Strict and Simple Translation Solution for typescript
 
+## Install
+
+Use GitHub registry - [details](https://help.github.com/en/github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages#installing-a-package)
+
+```
+> npm install @travelport-czech/ss-translations
+```
+
 ## Usage
 ```typescript
 import { translate, TranslationKeysBase } from './translate'
