@@ -1,4 +1,5 @@
 export enum TranslationEnum {
   Cat = 'Cat',
-  Dog = 'Dog'
+  Dog = 'Dog',
+  Wolf = 'Wolf'
 }

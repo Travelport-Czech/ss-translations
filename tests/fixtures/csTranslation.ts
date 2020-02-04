@@ -2,5 +2,6 @@ import { TranslationKeys } from './TranslationKeys'
 
 export const csTranslation: TranslationKeys = {
   Cat: 'kočka',
-  Dog: 'pes {?} {?}'
+  Dog: 'pes {?} {?}',
+  Wolf: 'vlk{_}{?}'
 }

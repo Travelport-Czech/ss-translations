@@ -32,4 +32,13 @@ describe('translate test', () => {
     }
     expect(toThrow).toThrow(`Bad number of params for message 'dog {?} {?}'`)
   })
+
+  it('should success with hard space', () => {
+    const translationKey = TranslationEnum.Wolf
+    const translationParams = ['Snowy']
+    const language = 'en'
+
+    const result = t(translationKey, translationParams, language)
+    expect(result).toBe('wolf Snowy')
+  })
 })

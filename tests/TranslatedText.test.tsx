@@ -54,4 +54,13 @@ describe('TranslatedText test', () => {
     }
     expect(toThrow).toThrow(`Bad number of params for message 'dog {?} {?}'`)
   })
+
+  it('should success with hard space', () => {
+    const result = renderToStaticMarkup(
+      <Text name={TranslationEnum.Wolf} language="en">
+        <span>Snowy</span>
+      </Text>
+    )
+    expect(result).toBe('wolf <span>Snowy</span>')
+  })
 })
