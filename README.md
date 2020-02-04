@@ -11,7 +11,8 @@ Use GitHub registry - [details](https://help.github.com/en/github/managing-packa
 
 ## Usage
 ```typescript
-import { translate, TranslationKeysBase } from './translate'
+import { translate } from './translate'
+import { TranslationKeysBase } from './TranslationKeysBase'
 
 enum TranslationEnum {
   Cat = 'Cat',
@@ -99,6 +100,59 @@ const skTranslation: TranslationKeys = {
   Dog: 'pe's'
 }
 // Typescript parser: ',' expected.
+```
+
+## Usage with React
+```typescript
+import { TranslatedText } from './TranslatedText'
+import { TranslationKeysBase } from './TranslationKeysBase'
+import * as React from 'react'
+
+enum TranslationEnum {
+  Cat = 'Cat',
+  Dog = 'Dog'
+}
+
+interface TranslationKeys extends TranslationKeysBase {
+  readonly [TranslationEnum.Cat]: string,
+  readonly [TranslationEnum.Dog]: string
+}
+
+const enTranslation: TranslationKeys = {
+  Cat: 'cat',
+  Dog: 'dog {?} {?}'
+}
+
+const csTranslation: TranslationKeys = {
+  Cat: 'kočka',
+  Dog: 'pes {?} {?}'
+}
+
+const translations = {
+  en: enTranslation,
+  cs: csTranslation
+}
+
+interface Props {
+  name: TranslationEnum,
+  language: string,
+  children: React.ReactNode
+}
+
+const Text = (props: Props) => {
+  const newProps = {
+    ...props,
+    translations
+  }
+  return TranslatedText(newProps)
+}
+
+<Text name={TranslationEnum.Dog} language="en">
+    <span>Dr.</span>
+    <span>Jack</span>
+</Text>
+
+// after render: dog <span>Dr.</span> <span>Jack</span>
 ```
 
 ## Placeholders
