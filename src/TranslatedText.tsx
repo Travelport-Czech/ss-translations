@@ -6,10 +6,9 @@ interface Props {
   name: string,
   language: string,
   translations: { [key: string]: TranslationKeysBase }
-  children: React.ReactNode
 }
 
-export const TranslatedText = (props: Props) => {
+export const TranslatedText: React.FunctionComponent<Props> = (props) => {
   const {
     name,
     language,

@@ -135,11 +135,10 @@ const translations = {
 
 interface Props {
   name: TranslationEnum,
-  language: string,
-  children: React.ReactNode
+  language: string
 }
 
-const Text = (props: Props) => {
+const Text: React.FunctionComponent<Props> = (props) => {
   const newProps = {
     ...props,
     translations
