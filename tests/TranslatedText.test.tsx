@@ -4,6 +4,7 @@ import { csTranslation } from './fixtures/csTranslation'
 import { TranslationEnum } from './fixtures/TranslationEnum'
 import * as React from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
+import { describe, expect, it } from 'vitest'
 
 const translations = {
   en: enTranslation,

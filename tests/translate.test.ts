@@ -2,6 +2,7 @@ import { translate } from '../src'
 import { enTranslation } from './fixtures/enTranslation'
 import { csTranslation } from './fixtures/csTranslation'
 import { TranslationEnum } from './fixtures/TranslationEnum'
+import { describe, expect, it } from 'vitest'
 
 const translations = {
   en: enTranslation,
