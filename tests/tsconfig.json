@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
     "sourceMap": true,
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "baseUrl": ".",
+    "typeRoots": ["../node_modules/@types"],
     "pretty": true,
     "declaration": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "removeComments": true,
     "noImplicitReturns": true,
-    "suppressImplicitAnyIndexErrors": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react"
   }

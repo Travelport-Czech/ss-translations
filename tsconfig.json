@@ -5,24 +5,18 @@
     "sourceMap": true,
     "strict": true,
     "moduleResolution": "node",
-    "rootDirs": [
-      "./src"
-    ],
+    "rootDirs": ["./src"],
     "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types"],
     "pretty": true,
     "declaration": true,
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "removeComments": true,
     "noImplicitReturns": true,
-    "suppressImplicitAnyIndexErrors": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "jsx": "react"
   },
-  "exclude": [
-    "node_modules",
-    "tests",
-    "dist"
-  ]
+  "exclude": ["node_modules", "tests", "dist"]
 }
