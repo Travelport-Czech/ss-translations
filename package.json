@@ -34,13 +34,13 @@
   "homepage": "https://github.com/Travelport-Czech/ss-translations#readme",
   "dependencies": {
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^20.19.0",
     "@types/react": "^16.14.70",
-    "@types/react-dom": "^16.9.25",
+    "@types/react-dom": "^19.2.3",
     "eslint": "^10.8.0",
     "prettier": "^3.9.6",
     "typescript": "^5.9.3",
