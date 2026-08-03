@@ -5,6 +5,7 @@ import { TranslationKeysBase } from './TranslationKeysBase'
 interface Props {
   name: string,
   language: string,
+  children?: React.ReactNode,
   translations: { [key: string]: TranslationKeysBase }
 }
 

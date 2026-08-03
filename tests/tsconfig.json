@@ -5,7 +5,6 @@
     "sourceMap": true,
     "strict": true,
     "moduleResolution": "bundler",
-    "baseUrl": ".",
     "typeRoots": ["../node_modules/@types"],
     "pretty": true,
     "declaration": true,

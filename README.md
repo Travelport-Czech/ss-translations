@@ -133,7 +133,8 @@ const translations = {
 
 interface Props {
   name: TranslationEnum,
-  language: string
+  language: string,
+  children?: React.ReactNode
 }
 
 const Text: React.FunctionComponent<Props> = (props) => {
@@ -174,6 +175,9 @@ Run tests
 ```bash
 > npm run test
 ```
+
+TypeScript 7 provides the `tsc` binary. The `typescript` development dependency uses the TypeScript 6
+compatibility package because `typescript-eslint` still requires the JavaScript compiler API.
 
 ## Version release workflow
 
