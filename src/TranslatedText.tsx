@@ -5,7 +5,8 @@ import { TranslationKeysBase } from './TranslationKeysBase'
 interface Props {
   name: string,
   language: string,
-  translations: { [key: string]: TranslationKeysBase }
+  translations: { [key: string]: TranslationKeysBase },
+  children?: React.ReactNode
 }
 
 export const TranslatedText: React.FunctionComponent<Props> = (props) => {
