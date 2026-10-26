@@ -1,6 +1,6 @@
 {
   "name": "@travelport-czech/ss-translations",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Strict and Simple Translation Solution for typescript",
   "author": "Michal Bureš",
   "license": "MIT",
